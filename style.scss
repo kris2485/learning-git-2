@@ -2,6 +2,7 @@
 body {
 	margin: 0 auto;
 	background-image: url(https://i.ytimg.com/vi/ZVF5x-YzUBY/maxresdefault.jpg);
+	color: #fff;
 }
 header {
 	nav {
@@ -17,12 +18,12 @@ header {
 				display: inline;
 				a {
 					line-height: 50px;
-					color: #000;
 					text-decoration: none;
 					text-transform: uppercase;
 					padding: 0 20px;
 					display: block;
 					font-size: 20px;
+					color: #fff;
 				}
 			}
 		}
