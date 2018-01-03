@@ -1,2 +1,10 @@
 autoprefixer-cli -o style.prefixed.css style.css
-cli [options] <.html>
+"scripts": {
+	"test": "npm run test:html",
+	"test:html": "nu-html-checker *.html"
+
+	"build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+	"build:sass": "node-sass --output-style compact -o css sass",
+	"build:sass:dev": "node-sass --output-style expanded --source-map true -o css sass",
+	"build:autoprefixer": "autoprefixer-cli css/style.css"
+}
